@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <script src="script.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE63vaj5G9nZ75xAGCDPU-RDXcWmzVXFc&callback=initMap">
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+
+        <title>Antipode Finder</title>
+    </head>
+    <body>
+        <h1>Antipode Finder</h1>
+        <div id="about">
+            <h2>Where in the world is my opposite location?</h2>
+            <p>
+            The antipode of a location on Earth is the location diametrically opposite to it.
+            Imagine if you were to put a straight line starting at your location, 
+            going through the center of the Earth. The end point at the opposite position 
+            on the globe would be your position's antipode. To find the antipode of a location
+            we use the following calculations:
+            </p>
+            <div id="calc">
+                <p>
+                antipodeLatitude = -(currentLatitude)
+                </p>
+                <p>
+                    antipodeLongitude = 180 - |currentLongitude|
+                </p>
+            </div>
+        </div>
+        <form id="myForm">
+            Enter an address:<br>
+            <input type="text" id = "address" name="address"><br>
+            <input type="button" onclick="parseAddress()" value="Search">
+        </form>
+
+        <div id="map" class="maps"></div>
+        <div id="amap" class="maps"></div>
+        <div class="geom">
+            <div id="lat"></div>
+            <div id="lng"></div>
+        </div>
+        <div clas="geom">
+            <div id="alat"></div>
+            <div id="alng"></div>
+        </div>
+        
+    </body>
+</html>

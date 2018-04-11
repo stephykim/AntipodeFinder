@@ -1,0 +1,62 @@
+html {
+    font-family: 'Nunito', sans-serif;
+    background: rgb(255, 216, 118);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    text-align:center;
+    background: #2A9D8F;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+#about {
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #E76F51;
+    color: white;
+}
+
+#myForm {
+    margin-top: 5px;
+    text-align:center;
+}
+
+#address {
+    height: 25px;
+    width: 250px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.maps {
+    margin: 1%;
+    height: 400px;
+    width: 48%;
+    float: left;   
+}
+
+.geom {
+    width: 50%;
+    margin-left: 15px;
+    float: left;
+}
+
+#calc {
+    text-align: center;
+}
